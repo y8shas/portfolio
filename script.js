@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const cards = document.querySelectorAll('.project-card, .about-card');
+  const cards = document.querySelectorAll('.about-card, .project-card, .timeline-content');
 
-  const revealCards = () => {
+  const reveal = () => {
     cards.forEach((card) => {
       const rect = card.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 80) {
+      if (rect.top < window.innerHeight - 60) {
         card.style.opacity = '1';
         card.style.transform = 'translateY(0)';
       }
@@ -14,9 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
   cards.forEach((card) => {
     card.style.opacity = '0';
     card.style.transform = 'translateY(18px)';
-    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    card.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
   });
 
-  revealCards();
-  window.addEventListener('scroll', revealCards, { passive: true });
+  reveal();
+  window.addEventListener('scroll', reveal, { passive: true });
 });
+
