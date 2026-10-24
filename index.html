@@ -3,342 +3,205 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Yashas V Giri — Python Developer, Automation Engineer, and Tech Explorer building practical software and systems."
-    />
-    <title>Yashas V Giri | Portfolio</title>
+    <meta name="description" content="Yashas V Giri: Python developer and automation engineer building bots, backends and systems that keep running." />
+    <title>Yashas V Giri | Backend &amp; Automation</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="bg-grid"></div>
-
     <header class="site-header">
-      <nav class="container nav">
-        <div class="brand" aria-label="Yashas V Giri home">
-          <span class="brand-mark">Y</span>
-          <span>Yashas V Giri</span>
-        </div>
-
+      <nav class="container nav" aria-label="Main">
+        <a class="brand" href="#top">~/<b>yashas</b>/portfolio</a>
         <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#journey">Journey</a>
-          <a href="#projects">Projects</a>
-          <a href="#stack">Stack</a>
-          <a href="#contact">Contact</a>
+          <a href="#about">about</a>
+          <a href="#journey">git log</a>
+          <a href="#projects">projects</a>
+          <a href="#stack">stack</a>
+          <a href="#contact">contact</a>
         </div>
-
-        <a class="nav-btn" href="#contact">Let’s Talk</a>
+        <a class="nav-btn" href="mailto:y8shas@gmail.com">ping me</a>
       </nav>
     </header>
 
-    <main>
+    <main id="top">
       <section class="hero container">
-        <div class="hero-copy">
-          <p class="eyebrow">Python Developer • Automation Engineer • Tech Explorer</p>
-          <h1>
-            I build things that turn ideas into
-            <span class="gradient-text">real, useful systems.</span>
-          </h1>
-          <p class="lead">
-            I’m Yashas V Giri, a CSE student at Dayananda Sagar College of Engineering,
-            Bengaluru, building projects across Python, automation, backend systems, AI,
-            cloud, and practical software workflows.
-          </p>
-
+        <div>
+          <p class="tag"><i></i>status: online, shipping</p>
+          <h1>Yashas V Giri<span>I build bots, backends and automation that keep running while I sleep.</span></h1>
+          <p class="lead">CSE student at Dayananda Sagar College of Engineering, Bengaluru. Python and Go on the backend, Linux in the terminal, and a habit of turning “wouldn’t it be cool if…” into deployed systems.</p>
           <div class="hero-actions">
-            <a class="primary-btn" href="#projects">View Projects</a>
-            <a class="secondary-btn" href="mailto:y8shas@gmail.com">Email Me</a>
+            <a class="primary-btn" href="#projects">$ ls projects/</a>
+            <a class="secondary-btn" href="mailto:y8shas@gmail.com">Email me</a>
           </div>
-
           <div class="social-row">
-            <a href="https://github.com/y8shas" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://instagram.com/y8shas" target="_blank" rel="noreferrer">Instagram</a>
-            <a href="https://linkedin.com/in/yashasvgiri" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="mailto:y8shas@gmail.com">Email</a>
+            <a href="https://github.com/y8shas" target="_blank" rel="noreferrer">github</a>
+            <a href="https://linkedin.com/in/yashasvgiri" target="_blank" rel="noreferrer">linkedin</a>
+            <a href="https://instagram.com/y8shas" target="_blank" rel="noreferrer">instagram</a>
           </div>
         </div>
 
-        <div class="hero-panel">
-          <div class="info-panel">
-            <div class="panel-label">Quick Info</div>
-            <ul>
-              <li><span>Name</span><strong>Yashas V Giri</strong></li>
-              <li><span>Location</span><strong>Bengaluru, India</strong></li>
-              <li><span>College</span><strong>DSCE • CSE '30</strong></li>
-              <li><span>Focus</span><strong>Backend • CSE • Systems</strong></li>
-              <li><span>Mode</span><strong>Learning + Building</strong></li>
-            </ul>
+        <div class="term" role="img" aria-label="Terminal showing a short profile of Yashas">
+          <div class="term-bar"><i></i><i></i><i></i><span>zsh: yashas@dsce</span></div>
+          <div class="term-body" id="term">
+            <p class="ln cmd">whoami</p>
+            <p class="ln out"><b>yashas-v-giri</b>, python dev / automation engineer</p>
+            <p class="ln cmd">cat sysinfo</p>
+            <p class="ln out">loc      <b>Bengaluru, IN</b>
+uni      <b>DSCE, CSE '30</b>
+langs    <b>Python, Go, Bash</b>
+infra    <b>Docker, Redis, Mongo, AWS</b>
+mode     <b>learning + building</b></p>
+            <p class="ln cmd">uptime</p>
+            <p class="ln out">tinkering since 2016, zero downtime on curiosity</p>
+            <p class="ln cmd">./open_to_work.sh</p>
+            <p class="ln out"><b>exit 0</b> internships, collabs, weird ideas welcome</p>
           </div>
         </div>
       </section>
 
       <section id="about" class="container section">
-        <div class="section-heading">
-          <p class="eyebrow">About Me</p>
-          <h2>Curious builder, system thinker, and problem solver.</h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-card">
-            <p>
-              My journey began with a fascination for how things work. From flashing custom ROMs on
-              phones in 2016 to exploring the internet and learning how software, hosting, and systems
-              fit together, I’ve always been drawn to building things with technology.
-            </p>
-          </div>
-
-          <div class="about-card">
-            <p>
-              Over time, I explored Telegram bots, cloud hosting, Heroku, backend patterns, MongoDB,
-              Redis, and many other tools that shaped how I think about software. I’ve spent years
-              learning by building, experimenting, and improving — from practical automation to future
-              tech ideas and real-world problem solving.
-            </p>
-          </div>
+        <p class="sec-label">// about</p>
+        <h2>Curious builder. Systems thinker. Debugger by nature.</h2>
+        <div class="readme">
+          <p>It started in 2016 with flashing custom ROMs on phones to see what would break. Ten years later I’m still doing the same thing, just with servers, bots and databases instead of a bootloader.</p>
+          <p>Along the way: Telegram bots, cloud hosting, Heroku, MongoDB, Redis and a lot of <code>git push</code>. I learn by building, shipping and fixing, from practical automation to ideas that don’t have a name yet.</p>
         </div>
       </section>
 
       <section id="journey" class="container section">
-        <div class="section-heading">
-          <p class="eyebrow">My Tech Journey</p>
-          <h2>From curiosity to building systems.</h2>
+        <p class="sec-label">$ git log --oneline</p>
+        <h2>From curiosity to building systems.</h2>
+        <div class="log">
+        <div class="commit">
+          <div class="meta"><span class="hash">e4a91c0</span><span>2016</span></div>
+          <h3>Flashed my first custom ROM</h3>
+          <p>Phone bricked, phone fixed. Learned how Android works under the hood by breaking it.</p>
         </div>
-
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-year">2016</span>
-              <h3>Custom ROMs & Mobile tinkering</h3>
-              <p>
-                This was where my interest in technology started. I was experimenting with custom ROMs,
-                flashing devices, and learning how Android systems worked under the hood.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-year">2017–2018</span>
-              <h3>Exploring the internet & digital systems</h3>
-              <p>
-                I began exploring how software, hosting, internet services, and digital tools worked,
-                which sparked my interest in learning more seriously about engineering and software.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-year">2018–2020</span>
-              <h3>Telegram bots, Heroku, hosting, cloud tools</h3>
-              <p>
-                This was one of the biggest turning points. I got into Telegram bot development and
-                started learning how hosting, deployment, APIs, and cloud services worked in practice.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-year">2020–2022</span>
-              <h3>Lockdown learning phase</h3>
-              <p>
-                During the lockdown, I dove deeper into backend development, frontend basics, databases,
-                cloud services, and core computer science concepts. This is where I really sharpened
-                my understanding of how systems work end to end.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-year">2022–2024</span>
-              <h3>Building and refining technical depth</h3>
-              <p>
-                I focused on improving my software fundamentals, building practical projects, and
-                expanding my understanding of automation, backend logic, APIs, and product thinking.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-year">2024–2026</span>
-              <h3>Academic focus + strong groundwork</h3>
-              <p>
-                I focused on my 10th and 12th studies while continuing to learn and build technical
-                foundations. This phase helped me stay grounded, disciplined, and focused on long-term
-                growth as a developer.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-year">2026–2030</span>
-              <h3>DSCE CSE'30: next chapter</h3>
-              <p>
-                I’m stepping into my computer science journey at Dayananda Sagar College of Engineering,
-                Bengaluru, with a focus on becoming a strong developer, problem solver, and builder for
-                the future.
-              </p>
-            </div>
-          </div>
+        <div class="commit">
+          <div class="meta"><span class="hash">7b2d5f3</span><span>2017–18</span></div>
+          <h3>Went down the internet rabbit hole</h3>
+          <p>Hosting, services, how the web actually runs. Curiosity turned into a plan to learn engineering properly.</p>
+        </div>
+        <div class="commit">
+          <div class="meta"><span class="hash">c13e8a7</span><span>2018–20</span></div>
+          <h3>Telegram bots + Heroku + APIs</h3>
+          <p>The turning point. First deployments, first APIs, first 3 a.m. production bugs.</p>
+        </div>
+        <div class="commit">
+          <div class="meta"><span class="hash">9f40d2b</span><span>2020–22</span></div>
+          <h3>Lockdown arc</h3>
+          <p>Backend, databases, cloud and core CS fundamentals. Understood systems end to end.</p>
+        </div>
+        <div class="commit">
+          <div class="meta"><span class="hash">3a8c61e</span><span>2022–24</span></div>
+          <h3>Refactored my fundamentals</h3>
+          <p>Shipped practical projects. Automation, backend logic, APIs and product thinking.</p>
+        </div>
+        <div class="commit">
+          <div class="meta"><span class="hash">d52b7f9</span><span>2024–26</span></div>
+          <h3>Boards mode: 10th + 12th</h3>
+          <p>Kept learning in the background while staying disciplined for exams.</p>
+        </div>
+        <div class="commit head">
+          <div class="meta"><span class="hash">a0f1c44</span><span class="ref">HEAD → main</span><span>2026–30</span></div>
+          <h3>DSCE CSE'30</h3>
+          <p>Dayananda Sagar College of Engineering, Bengaluru. Building toward stronger systems.</p>
+        </div>
         </div>
       </section>
 
       <section id="projects" class="container section">
-        <div class="section-heading">
-          <p class="eyebrow">Featured Work</p>
-          <h2>Projects that reflect my technical interests.</h2>
-        </div>
-
+        <p class="sec-label">~/projects</p>
+        <h2>Things I built, deployed and kept alive.</h2>
         <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-topline">
-              <span class="chip">AI</span>
-              <span class="project-type">Python</span>
-            </div>
-            <h3>ChatGptBot</h3>
-            <p>AI chatbot experience built for Telegram, focused on conversational interfaces and system automation.</p>
-            <a href="https://github.com/y8shas/ChatGptBot" target="_blank" rel="noreferrer">View project →</a>
+          <article class="card">
+            <header><span class="lang py">Python</span><button class="copy" data-copy="git clone https://github.com/y8shas/ChatGptBot" aria-label="Copy clone command for ChatGptBot">git clone</button></header>
+            <h3><a href="https://github.com/y8shas/ChatGptBot" target="_blank" rel="noreferrer">ChatGptBot</a></h3>
+            <p>A Telegram chatbot wired to an LLM. Talks back, remembers context, never sleeps.</p>
           </article>
-
-          <article class="project-card">
-            <div class="project-topline">
-              <span class="chip">Cloud</span>
-              <span class="project-type">Python</span>
-            </div>
-            <h3>google-drive-telegram-bot</h3>
-            <p>Google Drive management bot built for file handling, uploads, and automation workflows.</p>
-            <a href="https://github.com/y8shas/google-drive-telegram-bot" target="_blank" rel="noreferrer">View project →</a>
+          <article class="card">
+            <header><span class="lang py">Python</span><button class="copy" data-copy="git clone https://github.com/y8shas/google-drive-telegram-bot" aria-label="Copy clone command for google-drive-telegram-bot">git clone</button></header>
+            <h3><a href="https://github.com/y8shas/google-drive-telegram-bot" target="_blank" rel="noreferrer">google-drive-telegram-bot</a></h3>
+            <p>Drive from your chat window: upload, fetch and manage files without opening a browser.</p>
           </article>
-
-          <article class="project-card">
-            <div class="project-topline">
-              <span class="chip">Files</span>
-              <span class="project-type">Python</span>
-            </div>
-            <h3>File-Sharing-Bot</h3>
-            <p>Telegram-based file sharing and content management system designed around practical access flows.</p>
-            <a href="https://github.com/y8shas/File-Sharing-Bot" target="_blank" rel="noreferrer">View project →</a>
+          <article class="card">
+            <header><span class="lang py">Python</span><button class="copy" data-copy="git clone https://github.com/y8shas/File-Sharing-Bot" aria-label="Copy clone command for File-Sharing-Bot">git clone</button></header>
+            <h3><a href="https://github.com/y8shas/File-Sharing-Bot" target="_blank" rel="noreferrer">File-Sharing-Bot</a></h3>
+            <p>Telegram file-sharing system with access flows built around who should see what.</p>
           </article>
-
-          <article class="project-card">
-            <div class="project-topline">
-              <span class="chip">Storage</span>
-              <span class="project-type">Python</span>
-            </div>
-            <h3>TG-FileStore</h3>
-            <p>File storage bot built for media workflows and content access management.</p>
-            <a href="https://github.com/y8shas/TG-FileStore" target="_blank" rel="noreferrer">View project →</a>
+          <article class="card">
+            <header><span class="lang py">Python</span><button class="copy" data-copy="git clone https://github.com/y8shas/TG-FileStore" aria-label="Copy clone command for TG-FileStore">git clone</button></header>
+            <h3><a href="https://github.com/y8shas/TG-FileStore" target="_blank" rel="noreferrer">TG-FileStore</a></h3>
+            <p>Media storage bot with a clean retrieval flow and access management baked in.</p>
           </article>
-
-          <article class="project-card">
-            <div class="project-topline">
-              <span class="chip">System</span>
-              <span class="project-type">Go</span>
-            </div>
-            <h3>xruncode</h3>
-            <p>Command execution system built for interacting with remote workflows and automation tasks.</p>
-            <a href="https://github.com/y8shas/xruncode" target="_blank" rel="noreferrer">View project →</a>
+          <article class="card">
+            <header><span class="lang go">Go</span><button class="copy" data-copy="git clone https://github.com/y8shas/xruncode" aria-label="Copy clone command for xruncode">git clone</button></header>
+            <h3><a href="https://github.com/y8shas/xruncode" target="_blank" rel="noreferrer">xruncode</a></h3>
+            <p>Remote command execution in Go. Send a command, get a result, automate the rest.</p>
           </article>
-
-          <article class="project-card">
-            <div class="project-topline">
-              <span class="chip">Media</span>
-              <span class="project-type">Python</span>
-            </div>
-            <h3>StreamSearchRoBot</h3>
-            <p>Search and media automation bot focused on discovery, workflow speed, and practical utility.</p>
-            <a href="https://github.com/y8shas/StreamSearchRoBot" target="_blank" rel="noreferrer">View project →</a>
+          <article class="card">
+            <header><span class="lang py">Python</span><button class="copy" data-copy="git clone https://github.com/y8shas/StreamSearchRoBot" aria-label="Copy clone command for StreamSearchRoBot">git clone</button></header>
+            <h3><a href="https://github.com/y8shas/StreamSearchRoBot" target="_blank" rel="noreferrer">StreamSearchRoBot</a></h3>
+            <p>Search-and-discover bot tuned for speed. Query in, results out.</p>
           </article>
-
-          <article class="project-card">
-            <div class="project-topline">
-              <span class="chip">Music</span>
-              <span class="project-type">Python</span>
-            </div>
-            <h3>Musicder-Bot</h3>
-            <p>Media-focused bot project centered on music and workflow automation ideas.</p>
-            <a href="https://github.com/y8shas/Musicder-Bot" target="_blank" rel="noreferrer">View project →</a>
+          <article class="card">
+            <header><span class="lang py">Python</span><button class="copy" data-copy="git clone https://github.com/y8shas/Musicder-Bot" aria-label="Copy clone command for Musicder-Bot">git clone</button></header>
+            <h3><a href="https://github.com/y8shas/Musicder-Bot" target="_blank" rel="noreferrer">Musicder-Bot</a></h3>
+            <p>Music-focused bot experiments: fetch, search and automate the boring parts.</p>
           </article>
-
-          <article class="project-card">
-            <div class="project-topline">
-              <span class="chip">Automation</span>
-              <span class="project-type">Python</span>
-            </div>
-            <h3>Terminal-Bot</h3>
-            <p>Command execution and shell workflow bot built to surface practical terminal automation.</p>
-            <a href="https://github.com/y8shas/Terminal-Bot" target="_blank" rel="noreferrer">View project →</a>
+          <article class="card">
+            <header><span class="lang py">Python</span><button class="copy" data-copy="git clone https://github.com/y8shas/Terminal-Bot" aria-label="Copy clone command for Terminal-Bot">git clone</button></header>
+            <h3><a href="https://github.com/y8shas/Terminal-Bot" target="_blank" rel="noreferrer">Terminal-Bot</a></h3>
+            <p>A shell you can reach from Telegram. Practical terminal automation on demand.</p>
           </article>
         </div>
       </section>
 
       <section id="stack" class="container section">
-        <div class="section-heading">
-          <p class="eyebrow">Tech Stack</p>
-          <h2>Tools and technologies I’ve explored and used in projects.</h2>
-        </div>
-
+        <p class="sec-label">$ cat stack.txt</p>
+        <h2>The toolbox.</h2>
         <div class="stack-grid">
-          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=python" alt="Python" /><span>Python</span></span>
-          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=bash" alt="Bash" /><span>Bash</span></span>
-          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=docker" alt="Docker" /><span>Docker</span></span>
-          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=linux" alt="Linux" /><span>Linux</span></span>
-          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=git" alt="Git" /><span>Git</span></span>
-          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" /><span>MongoDB</span></span>
-          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" /><span>MySQL</span></span>
-          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=postgres" alt="Postgres" /><span>Postgres</span></span>
-          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=redis" alt="Redis" /><span>Redis</span></span>
-          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=aws" alt="AWS" /><span>AWS</span></span>
-          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=azure" alt="Azure" /><span>Azure</span></span>
-          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=gcp" alt="GCP" /><span>GCP</span></span>
-          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=fastapi" alt="FastAPI" /><span>FastAPI</span></span>
-          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=github" alt="GitHub" /><span>GitHub</span></span>
+          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=python" alt="" width="24" height="24" loading="lazy" />Python</span>
+          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=bash" alt="" width="24" height="24" loading="lazy" />Bash</span>
+          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=docker" alt="" width="24" height="24" loading="lazy" />Docker</span>
+          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=linux" alt="" width="24" height="24" loading="lazy" />Linux</span>
+          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=git" alt="" width="24" height="24" loading="lazy" />Git</span>
+          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=mongodb" alt="" width="24" height="24" loading="lazy" />MongoDB</span>
+          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=mysql" alt="" width="24" height="24" loading="lazy" />MySQL</span>
+          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=postgres" alt="" width="24" height="24" loading="lazy" />Postgres</span>
+          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=redis" alt="" width="24" height="24" loading="lazy" />Redis</span>
+          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=aws" alt="" width="24" height="24" loading="lazy" />AWS</span>
+          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=azure" alt="" width="24" height="24" loading="lazy" />Azure</span>
+          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=gcp" alt="" width="24" height="24" loading="lazy" />GCP</span>
+          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=fastapi" alt="" width="24" height="24" loading="lazy" />FastAPI</span>
+          <span class="stack-tag"><img src="https://skillicons.dev/icons?i=github" alt="" width="24" height="24" loading="lazy" />GitHub</span>
         </div>
       </section>
 
-      <section class="container cta-section">
-        <div class="cta-box">
-          <p class="eyebrow">Available for work</p>
-          <h2>I’m building toward bigger systems, projects, and opportunities.</h2>
-          <a href="mailto:y8shas@gmail.com" class="primary-btn">Start a Conversation</a>
+      <section class="container">
+        <div class="cta">
+          <div>
+            <p class="sec-label">$ ./start_conversation.sh</p>
+            <h2>Got a problem worth solving? Let’s build it.</h2>
+          </div>
+          <a href="mailto:y8shas@gmail.com" class="primary-btn">Send a message</a>
         </div>
       </section>
     </main>
 
     <footer id="contact" class="site-footer">
       <div class="container footer-wrap">
-        <div>
-          <p class="eyebrow">Let’s Connect</p>
-          <h2>Open to collaborating on meaningful tech projects.</h2>
-        </div>
-
+        <h2>Open to collabs on meaningful tech.</h2>
         <div class="footer-links">
-          <a href="https://github.com/y8shas" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://instagram.com/y8shas" target="_blank" rel="noreferrer">Instagram</a>
-          <a href="https://linkedin.com/in/yashasvgiri" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="mailto:y8shas@gmail.com">Email</a>
+          <a href="https://github.com/y8shas" target="_blank" rel="noreferrer">github</a>
+          <a href="https://linkedin.com/in/yashasvgiri" target="_blank" rel="noreferrer">linkedin</a>
+          <a href="https://instagram.com/y8shas" target="_blank" rel="noreferrer">instagram</a>
+          <a href="mailto:y8shas@gmail.com">email</a>
         </div>
       </div>
-
-      <div class="container copyright">© 2026 Yashas V Giri. All rights reserved.</div>
+      <div class="container copyright">© 2026 Yashas V Giri · compiled in Bengaluru, zero warnings</div>
     </footer>
 
     <script src="script.js"></script>
